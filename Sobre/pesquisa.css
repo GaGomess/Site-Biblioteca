@@ -1,0 +1,151 @@
+/* Estilo geral para a página de resultados */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilo para a lista de resultados */
+.resultados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Estilo para cada item de resultado */
+.livro {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    display: flex; /* Para alinhar os elementos verticalmente */
+    flex-direction: column; /* Para empilhar os elementos verticalmente */
+    align-items: center; /* Alinhar os elementos centralmente */
+    text-align: center; /* Centralizar o texto */
+}
+
+.livro img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px; /* Adicione espaço acima da imagem */
+}
+
+/* Estilo para o título do livro */
+.livro h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Estilo para os detalhes do livro */
+.livro label {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Estilo para o botão "Leia Já" */
+.botao-leia {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-leia:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para o header estilo navbar */
+/* Estilos da barra de navegação */
+.navbar {
+    display: flex;
+    background: #03031f;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+}
+
+/* Estilos do logo */
+.navbar .logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* Estilos com largura igual para todos os botões */
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: white;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Estilos da barra de pesquisa */
+.barra-pesquisa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+
+/* Estilize o campo de pesquisa */
+.barra-pesquisa-container input[type="text"] {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+    outline: none;
+}
+
+.barra-pesquisa-container input[type="text"]::placeholder {
+    color: #999;
+}
+
+/* Estilize o botão de pesquisa */
+.barra-pesquisa-container button {
+    background-color: #730d73;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.barra-pesquisa-container button:hover {
+    background-color: #531053;
+}

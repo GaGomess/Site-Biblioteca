@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login | Estante de Livros</title>
+	<link rel="icon" type="image/png" href="../Imagens/iconeBranco.png">
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="icon" type="image/png" href="icone_livro.png">
+</head>
+
+<body>
+	<div class="container">
+		<h1>Login</h1>
+		<form method="POST" action="processa_login.php">
+			<input type="text" placeholder="Email" name="email" required>
+			<input type="password" placeholder="Senha" name="senha" required>
+			<button type="submit">Entrar</button>
+		</form>
+		<h4 style="text-align: center;">Não tem uma conta? <a href="../Cadastro/cadastro.html" onclick="registrar()">Registre-se!</a></h4>
+	</div>
+
+	<script>
+		var email = document.getElementsByName("email")[0].value;
+		localStorage.setItem('email', email);
+	</script>
+</body>
+</html>

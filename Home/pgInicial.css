@@ -1,0 +1,25 @@
+/* Redefine as margens e preenchimentos padrão para zero em todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais para o corpo da página */
+body {
+    display: flex;
+    flex-direction: column; /* Define a direção de empilhamento como vertical */
+    justify-content: center; /* Centraliza verticalmente o conteúdo da página */
+    height: 100vh; /* Define a altura da página como 100% da altura da janela do navegador */
+    overflow-x: hidden;
+}
+
+    .scroll-to-policy {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="icon" href="../Imagens/icon2.ico" type="image/x-icon">
+    
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <a href="../Home/pgInicial.html" class="logo"><img src="../Imagens/IconeBranco.png" alt="Logo"></a>
+        <a href="../Favorito/index.html">Favoritos</a>
+        <a href="../Sobre/sobre.html">Sobre Nós</a>
+
+        <!-- Adicione a barra de pesquisa à barra de navegação -->
+        <div class="barra-pesquisa-container">
+            <form action="pesquisa.php" method="GET">
+                <input type="text" name="nome_livro" size="50" placeholder="Pesquise por livro, autor, categoria...">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>

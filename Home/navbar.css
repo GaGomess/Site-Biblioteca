@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  overflow-x: hidden;
+}
+
+/* Estilos da barra de navegação */
+.navbar {
+  display: flex;
+  background: #03031f;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* Estilos com largura igual para todos os botões */
+.navbar a {
+  color: white;
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+  text-decoration: none;
+  margin: 0 10px;
+  /* Remove a largura fixa para todos os botões */
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.navbar a:hover {
+  color: rgb(156, 156, 156);
+}
+
+/* Espaçamento para o conteúdo abaixo da barra de navegação */
+.content {
+  padding: 80px 16px;
+  margin-top: 80px;
+}
+
+/* Estilos da barra de pesquisa */
+.barra-pesquisa-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+/* Estilize o campo de pesquisa */
+.barra-pesquisa-container input[type="text"] {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  padding: 5px; /* Reduz o espaçamento interno */
+  width: 80%; /* Reduz a largura do campo de pesquisa */
+  outline: none;
+}
+
+
+.barra-pesquisa-container input[type="text"]::placeholder {
+  color: #999;
+}
+
+/* Estilize o botão de pesquisa */
+.barra-pesquisa-container button {
+  background-color: #730d73;
+  color: white;
+  border: none;
+  padding: 5px 10px; /* Reduz o espaçamento interno e a largura do botão */
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.barra-pesquisa-container button:hover {
+  background-color: #531053;
+}

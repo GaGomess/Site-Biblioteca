@@ -1,0 +1,16 @@
+/* Estilizando o slider */
+.slider {
+    margin: 20px auto; /* Margem externa auto para centralização horizontal */
+    text-align: center; /* Centralizar os elementos dentro do slider */
+}
+
+/* Estilizando os slides do carrossel */
+.carousel .item {
+    margin: 0 5px; /* Espaço horizontal entre os livros */
+}
+
+/* Estilizando as imagens dos livros */
+.carousel .item img {
+    max-width: 100%; /* Largura máxima das imagens */
+    height: auto; /* Altura automática, mantendo a proporção original */
+}

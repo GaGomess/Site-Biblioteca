@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos</title>
+    <link rel="stylesheet" href="puxafav.css">
+    <link rel="icon" type="image/png" href="../Imagens/iconeBranco.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <a href="../Home/pgInicial.html" class="    logo"><img src="../Imagens/IconeBranco.png" alt="Logo"></a>
+        <a href="../Favorito/index.html">Favoritos</a>
+        <a href="../Sobre/sobre.html">Sobre Nós</a>
+
+        <!-- Adicione a barra de pesquisa à barra de navegação -->
+        <div class="barra-pesquisa-container">
+            <form action="../Home/pesquisa.php" method="GET">
+                <input type="text" name="nome_livro" size="50" placeholder="Pesquise por livro, autor, categoria...">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <div class="content">
+        <iframe src="puxaFav.php" frameborder="0" width="100%" height="580"></iframe>
+    </div>
+    
+</body>
+</html>
+ 
